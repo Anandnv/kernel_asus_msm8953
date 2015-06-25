@@ -114,6 +114,7 @@
  * would be.
  * [...]
  */
+
 #define __pure			__attribute__((pure))
 #define __aligned(x)		__attribute__((aligned(x)))
 #define __printf(a, b)		__attribute__((format(printf, a, b)))
@@ -121,6 +122,14 @@
 #define __attribute_const__	__attribute__((__const__))
 #define __maybe_unused		__attribute__((unused))
 #define __always_unused		__attribute__((unused))
+#define __pure				__attribute__((pure))
+#define __aligned(x)			__attribute__((aligned(x)))
+#define __printf(a, b)			__attribute__((format(printf, a, b)))
+#define __scanf(a, b)			__attribute__((format(scanf, a, b)))
+#define  noinline			__attribute__((noinline))
+#define __attribute_const__		__attribute__((__const__))
+#define __maybe_unused			__attribute__((unused))
+#define __always_unused			__attribute__((unused))
 
 /* gcc version specific checks */
 
