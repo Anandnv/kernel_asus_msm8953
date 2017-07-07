@@ -3945,6 +3945,7 @@ static int queue_command(struct xhci_hcd *xhci, struct xhci_command *cmd,
 		(xhci->xhc_state & XHCI_STATE_HALTED)) {
 	if (xhci->xhc_state) {
 	xhci_dbg(xhci, "xHCI dying or halted, can't queue_command\n");
+		xhci_dbg(xhci, "xHCI dying or halted, can't queue_command\n");
 		return -ESHUTDOWN;
 	}
 

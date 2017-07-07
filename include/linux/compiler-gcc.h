@@ -132,7 +132,6 @@
 #define __always_unused			__attribute__((unused))
 
 /* gcc version specific checks */
-
 #if GCC_VERSION < 30200
 # error Sorry, your compiler is too old - please upgrade it.
 #endif
