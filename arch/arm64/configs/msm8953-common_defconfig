@@ -781,7 +781,7 @@ CONFIG_WLAN_OFFLOAD_PACKETS=y
 # support sdcardfs
 #
 CONFIG_CONFIGFS_FS=y
-CONFIG_SDCARD_FS=y
+# CONFIG_SDCARD_FS is not set
 #
 # IO schedulers
 #
