@@ -1,4 +1,4 @@
-_/*
+/*
  * xHCI host controller driver
  *
  * Copyright (C) 2008 Intel Corp.
@@ -3942,7 +3942,7 @@ static int queue_command(struct xhci_hcd *xhci, struct xhci_command *cmd,
 	int ret;
 
 	if (xhci->xhc_state) {
-	xhci_dbg(xhci, "xHCI dying or halted, can't queue_command\n");
+		xhci_dbg(xhci, "xHCI dying or halted, can't queue_command\n");
 		return -ESHUTDOWN;
 	}
 
